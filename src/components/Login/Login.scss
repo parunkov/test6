@@ -1,0 +1,85 @@
+.login {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	&__form-wrapper {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&__logo {
+		position: absolute;
+		top: -50px;
+		left: 50%;
+		width: 115px;
+		height: 30px;
+		transform: translate(-50%, 0);
+	}
+	&__form {
+		padding: 40px 30px;
+		width: 520px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+	}
+	&__title {		
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: 1px;
+		margin-bottom: 20px;
+	}
+	&__error {
+		width: 100%;
+		padding: 10px;
+		padding-top: 7px;
+		background: rgba(207, 44, 0, 0.1);
+		border-radius: 5px;
+		margin-bottom: 20px;
+	}
+	&__error-smile {
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin-right: 10px;
+		margin-top: 5px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%3E%3Cg%20opacity%3D%22.8%22%20stroke%3D%22%23CF2C00%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%2022c5.523%200%2010-4.477%2010-10S17.523%202%2012%202%202%206.477%202%2012s4.477%2010%2010%2010zM8%2015h8M9%209h.01M15%209h.01%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+	}
+	&__error-title {		
+		font-size: 18px;
+		line-height: 20px;
+		color: #CF2C00;
+		letter-spacing: 0.5px;
+	}
+	&__error-title-text {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 8px;
+	}
+	&__error-text {
+		padding-left: 33px;
+		font-size: 12px;
+		line-height: 20px;
+		color: #CF2C00;
+		opacity: 0.5;
+		letter-spacing: 0.35px;
+	}
+	&__input {
+		margin-bottom: 22px;
+		&:nth-child(4) {
+			margin-bottom: 18px;
+		}
+	}
+	&__button {
+		display: inline-block;
+		min-width: 110px;
+	}
+	&__link {
+		position: absolute;
+		bottom: -38px;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+}
