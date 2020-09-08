@@ -1,0 +1,72 @@
+.form-control {
+	&_theme_error {
+		.form-control__title {
+			color: #CF2C00;
+		}
+		.form-control__input, .form-control__textarea {
+			border: 1px solid #CF2C00;
+			box-shadow: 0px 0px 5px rgba(207, 44, 0, 0.5);
+			&:hover, &:focus {
+				border: 1px solid #CF2C00;
+				box-shadow: 0px 0px 5px rgba(207, 44, 0, 0.5);
+			}
+		}
+	}
+	&_size_flex {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		.form-control__title {
+			flex: 0 0 auto;
+			text-align: left;
+		}
+		.form-control__input, .form-control__textarea {
+			flex: auto;
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+	&__title {
+		margin-bottom: 10px;
+		display: inline-block;
+		&_size_small {
+			font-size: 12px;
+			line-height: 20px;
+			letter-spacing: 0.7px;
+			text-align: right;
+			color: #999999;
+			margin-bottom: 0;
+		}
+	}
+	&__subtitle {
+		float: right;		
+		font-size: 12px;
+		line-height: 20px;
+		color: #999999;
+
+	}
+	&__input, &__textarea {
+		padding: 3px 8px;
+		width: 100%;
+		font-size: 18px;
+		line-height: 30px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		&_type_password {
+			font-size: 34px;
+			height: 40px;
+		}
+		&:hover {
+			border: 1px solid rgba(0, 0, 0, 0.4);
+		}
+		&:focus {
+			outline: none;
+			border: 1px solid rgba(0, 0, 0, 0.4);
+		}
+	}
+	&__textarea {
+		padding: 10px;
+		resize: none;
+	}
+}

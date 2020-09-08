@@ -1,0 +1,25 @@
+@keyframes color {
+	0% {color: #999999;}
+	50% {color: #0055FB;}
+	100% {color: #999999;}
+}
+
+@keyframes scale {
+	0% {transform: scale(1);}
+	100% {transform: scale(0);}
+}
+
+.git-hub-link {
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+	color: #999999;
+	text-decoration: none;
+	&:hover {
+		animation: color 1s infinite ease-in-out;
+	}
+	&:active {
+		animation: scale 3s;
+	}
+}
